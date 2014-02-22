@@ -3,10 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPAServices", "CPAServices.csproj", "{83BA1A66-04BB-4D98-8109-B161067C1AB1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CpsServicesTest", "..\CpsServicesTest\CpsServicesTest.csproj", "{5D9F6DDE-829A-4760-B262-394873E8B6F8}"
-	ProjectSection(ProjectDependencies) = postProject
-		{83BA1A66-04BB-4D98-8109-B161067C1AB1} = {83BA1A66-04BB-4D98-8109-B161067C1AB1}
-	EndProjectSection
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CpsServicesTest", "CpsServicesTest\CpsServicesTest.csproj", "{5D9F6DDE-829A-4760-B262-394873E8B6F8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

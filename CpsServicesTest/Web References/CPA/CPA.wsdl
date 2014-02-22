@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="GetCPAById">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="idProvincia" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="idLocalidad" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="calle" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="altura" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCPAByIdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCPAByIdResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCPAByNombre">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="idProvincia" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nombreLocalidad" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="calle" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="altura" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCPAByNombreResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCPAByNombreResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetIdProvincia">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nombreProvincia" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetIdProvinciaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetIdProvinciaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetIdLocalidad">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="idProvincia" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nombreLocalidad" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetIdLocalidadResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetIdLocalidadResult" nillable="true" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetCPAByIdSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCPAById" />
+  </wsdl:message>
+  <wsdl:message name="GetCPAByIdSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCPAByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCPAByNombreSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCPAByNombre" />
+  </wsdl:message>
+  <wsdl:message name="GetCPAByNombreSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCPAByNombreResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetIdProvinciaSoapIn">
+    <wsdl:part name="parameters" element="tns:GetIdProvincia" />
+  </wsdl:message>
+  <wsdl:message name="GetIdProvinciaSoapOut">
+    <wsdl:part name="parameters" element="tns:GetIdProvinciaResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetIdLocalidadSoapIn">
+    <wsdl:part name="parameters" element="tns:GetIdLocalidad" />
+  </wsdl:message>
+  <wsdl:message name="GetIdLocalidadSoapOut">
+    <wsdl:part name="parameters" element="tns:GetIdLocalidadResponse" />
+  </wsdl:message>
+  <wsdl:portType name="CPASoap">
+    <wsdl:operation name="GetCPAById">
+      <wsdl:input message="tns:GetCPAByIdSoapIn" />
+      <wsdl:output message="tns:GetCPAByIdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCPAByNombre">
+      <wsdl:input message="tns:GetCPAByNombreSoapIn" />
+      <wsdl:output message="tns:GetCPAByNombreSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetIdProvincia">
+      <wsdl:input message="tns:GetIdProvinciaSoapIn" />
+      <wsdl:output message="tns:GetIdProvinciaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetIdLocalidad">
+      <wsdl:input message="tns:GetIdLocalidadSoapIn" />
+      <wsdl:output message="tns:GetIdLocalidadSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="CPASoap" type="tns:CPASoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetCPAById">
+      <soap:operation soapAction="http://tempuri.org/GetCPAById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCPAByNombre">
+      <soap:operation soapAction="http://tempuri.org/GetCPAByNombre" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIdProvincia">
+      <soap:operation soapAction="http://tempuri.org/GetIdProvincia" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIdLocalidad">
+      <soap:operation soapAction="http://tempuri.org/GetIdLocalidad" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="CPASoap12" type="tns:CPASoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetCPAById">
+      <soap12:operation soapAction="http://tempuri.org/GetCPAById" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCPAByNombre">
+      <soap12:operation soapAction="http://tempuri.org/GetCPAByNombre" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIdProvincia">
+      <soap12:operation soapAction="http://tempuri.org/GetIdProvincia" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIdLocalidad">
+      <soap12:operation soapAction="http://tempuri.org/GetIdLocalidad" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CPA">
+    <wsdl:port name="CPASoap" binding="tns:CPASoap">
+      <soap:address location="http://localhost:2757/CPA.asmx" />
+    </wsdl:port>
+    <wsdl:port name="CPASoap12" binding="tns:CPASoap12">
+      <soap12:address location="http://localhost:2757/CPA.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
