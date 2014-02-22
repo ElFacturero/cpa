@@ -83,7 +83,7 @@ namespace CPAServices
 
         private static string GetUrl()
         {
-            return @"http://www.correoargentino.com.ar/sites/all/modules/custom/ca_forms/api/ajax.php";
+            return System.Configuration.ConfigurationManager.AppSettings["formUrl"];
         }
 
         [WebMethod]
@@ -122,7 +122,10 @@ namespace CPAServices
         {
             _Provincias = new Dictionary<string, string>();
             foreach (String key in System.Configuration.ConfigurationManager.AppSettings) {
-                _Provincias.Add(key, System.Configuration.ConfigurationManager.AppSettings[key]);
+                if (key.Length == 1)
+                {
+                    _Provincias.Add(key, System.Configuration.ConfigurationManager.AppSettings[key]);
+                }
             }
         }
 
@@ -134,7 +137,7 @@ namespace CPAServices
                 data["provincia"] = idProvincia;
                 data["action"] = "localidades";
 
-                var response = wb.UploadValues("http://www.correoargentino.com.ar/sites/all/modules/custom/ca_forms/api/ajax.php", "POST", data);
+                var response = wb.UploadValues(GetUrl(), "POST", data);
 
                 dynamic result = Newtonsoft.Json.JsonConvert.DeserializeObject(System.Text.Encoding.UTF8.GetString(response));
 

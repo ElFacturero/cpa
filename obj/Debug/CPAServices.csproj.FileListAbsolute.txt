@@ -12,3 +12,4 @@ C:\Users\Federico\Documents\GitHub\cpa\bin\CPAServices.dll
 C:\Users\Federico\Documents\GitHub\cpa\bin\CPAServices.pdb
 C:\Users\Federico\Documents\GitHub\cpa\obj\Debug\CPAServices.dll
 C:\Users\Federico\Documents\GitHub\cpa\obj\Debug\CPAServices.pdb
+C:\Users\Federico\Documents\GitHub\cpa\obj\Debug\CPAServices.csprojResolveAssemblyReference.cache
