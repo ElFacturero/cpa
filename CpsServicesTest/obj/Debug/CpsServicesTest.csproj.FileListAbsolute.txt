@@ -3,3 +3,8 @@ C:\Users\Federico\Documents\GitHub\CpsServicesTest\bin\Debug\CpsServicesTest.pdb
 C:\Users\Federico\Documents\GitHub\CpsServicesTest\obj\Debug\CpsServicesTest.dll
 C:\Users\Federico\Documents\GitHub\CpsServicesTest\obj\Debug\CpsServicesTest.pdb
 C:\Users\Federico\Documents\GitHub\CpsServicesTest\bin\Debug\CpsServicesTest.dll.config
+C:\Users\Federico\Documents\GitHub\cpa\CpsServicesTest\bin\Debug\CpsServicesTest.dll.config
+C:\Users\Federico\Documents\GitHub\cpa\CpsServicesTest\bin\Debug\CpsServicesTest.dll
+C:\Users\Federico\Documents\GitHub\cpa\CpsServicesTest\bin\Debug\CpsServicesTest.pdb
+C:\Users\Federico\Documents\GitHub\cpa\CpsServicesTest\obj\Debug\CpsServicesTest.dll
+C:\Users\Federico\Documents\GitHub\cpa\CpsServicesTest\obj\Debug\CpsServicesTest.pdb
