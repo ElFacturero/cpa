@@ -1,0 +1,10 @@
+C:\Users\Federico\Documents\Visual Studio 2012\Projects\ConsoleApplication1\WebApplication1\bin\CPAServices.dll
+C:\Users\Federico\Documents\Visual Studio 2012\Projects\ConsoleApplication1\WebApplication1\bin\CPAServices.pdb
+C:\Users\Federico\Documents\Visual Studio 2012\Projects\ConsoleApplication1\WebApplication1\bin\HtmlAgilityPack.dll
+C:\Users\Federico\Documents\Visual Studio 2012\Projects\ConsoleApplication1\WebApplication1\bin\Newtonsoft.Json.dll
+C:\Users\Federico\Documents\Visual Studio 2012\Projects\ConsoleApplication1\WebApplication1\bin\HtmlAgilityPack.pdb
+C:\Users\Federico\Documents\Visual Studio 2012\Projects\ConsoleApplication1\WebApplication1\bin\HtmlAgilityPack.xml
+C:\Users\Federico\Documents\Visual Studio 2012\Projects\ConsoleApplication1\WebApplication1\bin\Newtonsoft.Json.xml
+C:\Users\Federico\Documents\Visual Studio 2012\Projects\ConsoleApplication1\WebApplication1\obj\Debug\CPAServices.dll
+C:\Users\Federico\Documents\Visual Studio 2012\Projects\ConsoleApplication1\WebApplication1\obj\Debug\CPAServices.pdb
+C:\Users\Federico\Documents\Visual Studio 2012\Projects\ConsoleApplication1\WebApplication1\obj\Debug\CPAServices.csprojResolveAssemblyReference.cache
