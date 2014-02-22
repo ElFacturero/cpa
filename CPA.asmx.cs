@@ -49,7 +49,14 @@ namespace CPAServices
                 string value = null;
                 if (htmlDoc.DocumentNode.SelectSingleNode("//h1/span") != null)
                 {
-                    value = htmlDoc.DocumentNode.SelectSingleNode("//h1/span").InnerHtml.Trim();
+                    if (htmlDoc.DocumentNode.ChildNodes.Where(x => x.Name.Equals("h1",StringComparison.CurrentCultureIgnoreCase)).Count() > 1)
+                    {
+                        value = null;
+                    }
+                    else
+                    {
+                        value = htmlDoc.DocumentNode.SelectSingleNode("//h1/span").InnerHtml.Trim();
+                    }
                 }
                 else
                 {
