@@ -8,3 +8,11 @@ C:\Users\Federico\Documents\Visual Studio 2012\Projects\ConsoleApplication1\WebA
 C:\Users\Federico\Documents\Visual Studio 2012\Projects\ConsoleApplication1\WebApplication1\obj\Debug\CPAServices.dll
 C:\Users\Federico\Documents\Visual Studio 2012\Projects\ConsoleApplication1\WebApplication1\obj\Debug\CPAServices.pdb
 C:\Users\Federico\Documents\Visual Studio 2012\Projects\ConsoleApplication1\WebApplication1\obj\Debug\CPAServices.csprojResolveAssemblyReference.cache
+C:\Users\Federico\Documents\GitHub\cpa\bin\CPAServices.dll
+C:\Users\Federico\Documents\GitHub\cpa\bin\CPAServices.pdb
+C:\Users\Federico\Documents\GitHub\cpa\bin\HtmlAgilityPack.pdb
+C:\Users\Federico\Documents\GitHub\cpa\bin\HtmlAgilityPack.xml
+C:\Users\Federico\Documents\GitHub\cpa\bin\Newtonsoft.Json.xml
+C:\Users\Federico\Documents\GitHub\cpa\obj\Debug\CPAServices.csprojResolveAssemblyReference.cache
+C:\Users\Federico\Documents\GitHub\cpa\obj\Debug\CPAServices.dll
+C:\Users\Federico\Documents\GitHub\cpa\obj\Debug\CPAServices.pdb
