@@ -14,7 +14,7 @@ namespace CpsServicesTest
             get { return errorAltura; }
             set { errorAltura = value; }
         }
-        /*
+        
         [TestMethod]
         public void Test9Julio()
         {
@@ -69,6 +69,6 @@ namespace CpsServicesTest
 
             Assert.IsNull(cpa );
         }
-        */
+        
     }
 }
