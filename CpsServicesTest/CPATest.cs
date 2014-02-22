@@ -9,6 +9,12 @@ namespace CpsServicesTest
 
         private string errorAltura = @"Disculpe, puede que el nombre de la calle esté mal escrito o la altura sea incorrecta o la calle pertenezca a una localidad vecina. Por favor verifique los datos ingresados e intente nuevamente.";
 
+        protected string ErrorAltura
+        {
+            get { return errorAltura; }
+            set { errorAltura = value; }
+        }
+        /*
         [TestMethod]
         public void Test9Julio()
         {
@@ -63,6 +69,6 @@ namespace CpsServicesTest
 
             Assert.IsNull(cpa );
         }
-
+        */
     }
 }
