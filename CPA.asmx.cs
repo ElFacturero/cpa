@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.Configuration;
+using System.IO;
 using System.Linq;
 using System.Net;
 using System.Text;
@@ -36,10 +37,9 @@ namespace CPAServices
                 data["localidad"] = idLocalidad.ToString();
                 data["calle"] = calle;
                 data["altura"] = altura;
-                data["ct_captcha"] = RandomString(6);
+                data["ct_captcha"] = GetCaptchaText();
                 data["action"] = "cpa";
-
-                var response = wb.UploadValues(GetUrl(), "POST", data);
+                var response = wb.UploadValues(GetCPAUrl(), "POST", data);
 
                 var html = System.Text.Encoding.UTF8.GetString(response);
 
@@ -65,7 +65,7 @@ namespace CPAServices
                 return value;
             }
         }
-
+        
         private static Random random = new Random((int)DateTime.Now.Ticks);
         private string RandomString(int size)
         {
@@ -80,8 +80,27 @@ namespace CPAServices
             return builder.ToString();
         }
 
+        private string GetCaptchaText()
+        {
+            var queryString = random.NextDouble().ToString().Replace(",", ".");
+            var captchaUrl = "http://www.correoargentino.com.ar/sites/all/modules/custom/ca_forms/libs/Captcha/securimage_show.php?" + queryString;
 
-        private static string GetUrl()
+            try
+            {
+                using (WebClient client = new WebClient())
+                {
+                    return OCRHelper.GetText(client.DownloadData(captchaUrl)).ToUpper();
+                }
+
+            }
+            catch (Exception)
+            {
+                return RandomString(6).ToUpper();
+            }
+        }
+
+
+        private static string GetCPAUrl()
         {
             return System.Configuration.ConfigurationManager.AppSettings["formUrl"];
         }
@@ -137,7 +156,7 @@ namespace CPAServices
                 data["provincia"] = idProvincia;
                 data["action"] = "localidades";
 
-                var response = wb.UploadValues(GetUrl(), "POST", data);
+                var response = wb.UploadValues(GetCPAUrl(), "POST", data);
 
                 dynamic result = Newtonsoft.Json.JsonConvert.DeserializeObject(System.Text.Encoding.UTF8.GetString(response));
 
