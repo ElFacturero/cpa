@@ -27,3 +27,4 @@ C:\Users\Federico\Documents\GitHub\cpa\bin\tessdata\eng.tesseract_cube.nn
 C:\Users\Federico\Documents\GitHub\cpa\bin\tessdata\eng.traineddata
 C:\Users\Federico\Documents\GitHub\cpa\bin\Tesseract.dll
 C:\Users\Federico\Documents\GitHub\cpa\bin\Tesseract.xml
+C:\Users\Federico\Documents\GitHub\cpa\obj\Debug\CPAServices.csprojResolveAssemblyReference.cache
