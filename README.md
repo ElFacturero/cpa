@@ -1,7 +1,10 @@
 CPA
 ===
-
 Web Service para obtener CPA Argentino para una dirección especificada.
+
+The MIT License (MIT)
+
+Copyright (c) [2014] [Federico Salafia]
 
 Operaciones: 
 
